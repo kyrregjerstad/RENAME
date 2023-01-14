@@ -1,13 +1,4 @@
-import {
-  form,
-  inputFields,
-  dateOutput,
-  fieldMapping,
-  firstNameInput,
-  lastNameInput,
-  firstNameOutput,
-  lastNameOutput,
-} from "./constants.js";
+import { form, inputFields, dateOutput, fieldMapping } from "./constants.js";
 import { storeUser } from "./store.js";
 import { transformInputValues } from "./transform-string.js";
 
