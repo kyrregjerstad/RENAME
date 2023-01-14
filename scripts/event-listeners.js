@@ -1,4 +1,10 @@
-import { form, inputFields, dateOutput, fieldMapping } from "./constants.js";
+import {
+  form,
+  inputFields,
+  dateOutput,
+  fieldMapping,
+  copyTooltip,
+} from "./constants.js";
 import { storeUser } from "./store.js";
 import { transformInputValues } from "./transform-string.js";
 
@@ -34,4 +40,14 @@ copyBtn.addEventListener("click", () => {
     .catch((err) => {
       console.error("Failed to copy text: ", err);
     });
+  copyTooltip.innerText = "Copied! 🎉";
+});
+
+copyBtn.addEventListener("mouseover", () => {
+  copyTooltip.classList.remove("hidden");
+});
+
+copyBtn.addEventListener("mouseleave", () => {
+  copyTooltip.classList.add("hidden");
+  copyTooltip.innerText = "Click to copy";
 });

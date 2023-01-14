@@ -85,6 +85,19 @@ html {
   outline: solid #4e4785 2px;
 }
 
+.hidden {
+  display: none;
+}
+
+#tooltip {
+  position: absolute;
+  inline-size: 130px;
+  left: 29.5rem;
+  top: 0;
+  color: white;
+  padding: 1em;
+}
+
 @media (max-width: 500px) {
   #form-wrapper {
     width: 100%;

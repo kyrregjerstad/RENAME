@@ -17,6 +17,8 @@ export const firstNameOutput = document.querySelector("#firstNameOutput");
 export const lastNameOutput = document.querySelector("#lastNameOutput");
 export const fileTypeOutput = document.querySelector("#fileTypeOutput");
 
+export const copyTooltip = document.querySelector("#tooltip");
+
 export const inputFields = [
   firstNameInput,
   lastNameInput,
