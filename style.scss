@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+$primary-color: #ff2f00;
+$secondary-color: #01ffb7;
+$blue: #4e4785;
+$dark: #0e0a0a;
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: $primary-color;
+}
+
+#header-title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block: 2em;
+  color: white;
+
+  h1 {
+    position: relative;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    font-style: italic;
+  }
+  #nLogo {
+    height: 3.5rem;
+    position: absolute;
+    right: 8.05rem;
+    transform: translateY(15%);
+  }
+}
+
+#form-wrapper {
+  margin: 0 auto;
+  width: 500px;
+  background-color: $dark;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+
+  #output-text {
+    position: relative;
+    color: #0e0a0a;
+    background-color: $secondary-color;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+
+    #copy-text-icon {
+      position: absolute;
+      right: 0.5rem;
+      top: 0;
+      transform: translateY(25%);
+      opacity: 25%;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 100%;
+      }
+    }
+  }
+
+  #input-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      outline: none;
+      border: none;
+      min-height: 1.5em;
+      box-sizing: content-box;
+
+      &:focus {
+        outline: solid $blue 2px;
+      }
+    }
+  }
+}

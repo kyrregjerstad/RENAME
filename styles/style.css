@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #ff2f00;
+}
+
+#header-title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block: 2em;
+  color: white;
+}
+#header-title h1 {
+  position: relative;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+#header-title h2 {
+  font-style: italic;
+}
+#header-title #nLogo {
+  height: 3.5rem;
+  position: absolute;
+  right: 8.05rem;
+  transform: translateY(15%);
+}
+
+#form-wrapper {
+  margin: 0 auto;
+  width: 500px;
+  background-color: #0e0a0a;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+}
+#form-wrapper #output-text {
+  position: relative;
+  color: #0e0a0a;
+  background-color: #01ffb7;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.25rem;
+}
+#form-wrapper #output-text #copy-text-icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+  transform: translateY(25%);
+  opacity: 25%;
+  cursor: pointer;
+}
+#form-wrapper #output-text #copy-text-icon:hover {
+  opacity: 100%;
+}
+#form-wrapper #input-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+#form-wrapper #input-form div {
+  display: flex;
+  flex-direction: column;
+}
+#form-wrapper #input-form input {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  outline: none;
+  border: none;
+  min-height: 1.5em;
+  box-sizing: content-box;
+}
+#form-wrapper #input-form input:focus {
+  outline: solid #4e4785 2px;
+}/*# sourceMappingURL=style.css.map */
