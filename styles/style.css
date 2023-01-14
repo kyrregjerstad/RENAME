@@ -45,8 +45,10 @@ html {
   border-radius: 1em;
   padding: 1em;
 }
-#form-wrapper #output-text {
+#form-wrapper #output-text-wrapper {
   position: relative;
+}
+#form-wrapper #output-text {
   color: #0e0a0a;
   background-color: #01ffb7;
   padding: 1rem;
@@ -100,7 +102,7 @@ html {
 
 @media (max-width: 500px) {
   #form-wrapper {
-    width: 100%;
+    width: 95%;
   }
   #form-wrapper #input-form {
     grid-template-columns: 1fr;
