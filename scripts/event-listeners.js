@@ -8,6 +8,8 @@ import {
 import { storeUser } from "./store.js";
 import { transformInputValues } from "./transform-string.js";
 
+const jsConfetti = new JSConfetti();
+
 export const copyBtn = document.querySelector("#copy-text-icon");
 const outputText = document.querySelector("#output-text");
 
@@ -41,6 +43,11 @@ copyBtn.addEventListener("click", () => {
       console.error("Failed to copy text: ", err);
     });
   copyTooltip.innerText = "Copied! 🎉";
+  jsConfetti.addConfetti({
+    // emojis: ["🌈", "⚡️", "💥", "✨", "💫", "🌸"],
+    confettiRadius: 6,
+    confettiNumber: 50,
+  });
 });
 
 copyBtn.addEventListener("mouseover", () => {
