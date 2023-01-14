@@ -28,6 +28,8 @@ html {
 }
 #header-title h2 {
   font-style: italic;
+  letter-spacing: 0.1em;
+  text-align: center;
 }
 #header-title #nLogo {
   height: 3.5rem;
@@ -82,4 +84,14 @@ html {
 }
 #form-wrapper #input-form input:focus {
   outline: solid #4e4785 2px;
+}
+
+@media (max-width: 500px) {
+  #form-wrapper {
+    margin: 1em;
+    width: 100%;
+  }
+  #form-wrapper #input-form {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=style.css.map */

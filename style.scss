@@ -33,6 +33,8 @@ html {
   }
   h2 {
     font-style: italic;
+    letter-spacing: 0.1em;
+    text-align: center;
   }
   #nLogo {
     height: 3.5rem;
@@ -93,6 +95,16 @@ html {
       &:focus {
         outline: solid $blue 2px;
       }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #form-wrapper {
+    margin: 1em;
+    width: 100%;
+    #input-form {
+      grid-template-columns: 1fr;
     }
   }
 }
