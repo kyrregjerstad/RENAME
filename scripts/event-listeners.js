@@ -1,4 +1,14 @@
-import { form, inputFields, dateOutput, fieldMapping } from "./constants.js";
+import {
+  form,
+  inputFields,
+  dateOutput,
+  fieldMapping,
+  firstNameInput,
+  lastNameInput,
+  firstNameOutput,
+  lastNameOutput,
+} from "./constants.js";
+import { storeUser } from "./store.js";
 import { transformInputValues } from "./transform-string.js";
 
 export const copyBtn = document.querySelector("#copy-text-icon");
@@ -9,6 +19,7 @@ form.addEventListener("keyup", (e) => {
   let inputValue = inputFields.find(
     (inputItem) => inputItem.id === targetId
   ).value;
+  storeUser(targetId, inputValue);
 
   fieldMapping[targetId].innerText = transformInputValues(inputValue);
 });
