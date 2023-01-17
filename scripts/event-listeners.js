@@ -20,7 +20,7 @@ form.addEventListener("keyup", (e) => {
   ).value;
   storeUser(targetId, inputValue);
 
-  fieldMapping[targetId].innerText = transformInputValues(inputValue);
+  fieldMapping[targetId].innerText = transformInputValues(inputValue, targetId);
 });
 
 form.addEventListener("change", (e) => {
