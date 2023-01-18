@@ -12,6 +12,14 @@ html {
   background-color: #ff2f00;
 }
 
+.logo-container {
+  max-width: 500px;
+  margin: 1em;
+}
+.logo-container #rename-logo {
+  max-width: 100%;
+}
+
 #header-title {
   position: relative;
   display: flex;
@@ -21,20 +29,9 @@ html {
   margin-block: 2em;
   color: white;
 }
-#header-title h1 {
-  position: relative;
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
 #header-title h2 {
   font-family: "Martian Mono", monospace;
   text-align: center;
-}
-#header-title #nLogo {
-  height: 3.5rem;
-  position: absolute;
-  right: 8.05rem;
-  transform: translateY(15%);
 }
 
 #form-wrapper {
@@ -106,5 +103,8 @@ html {
   }
   #form-wrapper #input-form {
     grid-template-columns: 1fr;
+  }
+  h2 {
+    font-size: 1.2em;
   }
 }/*# sourceMappingURL=style.css.map */

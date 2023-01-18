@@ -17,6 +17,14 @@ html {
   background-color: $primary-color;
 }
 
+.logo-container {
+  max-width: 500px;
+  margin: 1em;
+  #rename-logo {
+    max-width: 100%;
+  }
+}
+
 #header-title {
   position: relative;
   display: flex;
@@ -25,21 +33,9 @@ html {
   align-items: center;
   margin-block: 2em;
   color: white;
-
-  h1 {
-    position: relative;
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-  }
   h2 {
     font-family: "Martian Mono", monospace;
     text-align: center;
-  }
-  #nLogo {
-    height: 3.5rem;
-    position: absolute;
-    right: 8.05rem;
-    transform: translateY(15%);
   }
 }
 
@@ -121,5 +117,8 @@ html {
     #input-form {
       grid-template-columns: 1fr;
     }
+  }
+  h2 {
+    font-size: 1.2em;
   }
 }
