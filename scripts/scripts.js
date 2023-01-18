@@ -7,6 +7,3 @@ import { setFieldsOnLoad } from "./init-on-load.js";
 setDate();
 retrieveUser();
 setFieldsOnLoad();
-
-const inputFields = document.querySelectorAll("input");
-const form = document.querySelector("form");
