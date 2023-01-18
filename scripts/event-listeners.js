@@ -19,6 +19,7 @@ form.addEventListener("keyup", (e) => {
     (inputItem) => inputItem.id === targetId
   ).value;
   storeUser(targetId, inputValue);
+  console.log(targetId);
 
   fieldMapping[targetId].innerText = transformInputValues(inputValue, targetId);
 });
@@ -42,10 +43,11 @@ copyBtn.addEventListener("click", () => {
     .catch((err) => {
       console.error("Failed to copy text: ", err);
     });
-  copyTooltip.innerText = "Copied! 🎉";
+  copyTooltip.innerHTML =
+    "<p>Copied! 🎉</p> <p>All the best on your assignment ✨</p";
   jsConfetti.addConfetti({
     // emojis: ["🌈", "⚡️", "💥", "✨", "💫", "🌸"],
-    confettiRadius: 6,
+    confettiRadius: 3,
     confettiNumber: 50,
   });
 });

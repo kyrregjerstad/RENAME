@@ -17,6 +17,10 @@ html {
   background-color: $primary-color;
 }
 
+body {
+  margin-bottom: 10em;
+}
+
 .logo-container {
   max-width: 500px;
   margin: 1em;
@@ -104,7 +108,7 @@ html {
 
 #tooltip {
   position: absolute;
-  inline-size: 130px;
+  inline-size: 350px;
   left: 29.5rem;
   top: 0;
   // background-color: rgba(0, 0, 0, 0.473);
