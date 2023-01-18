@@ -95,6 +95,7 @@ body {
       min-height: 1.5em;
       box-sizing: content-box;
       font-size: 1rem;
+      transition: background-color 300ms;
 
       &:focus {
         outline: solid $blue 2px;
@@ -127,4 +128,9 @@ body {
   h2 {
     font-size: 1.2em;
   }
+}
+
+.missing-field {
+  transition: background-color 300ms;
+  background-color: #d0342c;
 }

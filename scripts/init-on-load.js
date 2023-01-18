@@ -6,7 +6,6 @@ export const setFieldsOnLoad = () => {
     const inputValue = inputFields.find(
       (inputItem) => inputItem.id === item
     ).value;
-    console.log(inputValue);
     if (inputValue === "") {
       return;
     }

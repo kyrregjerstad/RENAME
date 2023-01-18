@@ -14,19 +14,39 @@ export const copyBtn = document.querySelector("#copy-text-icon");
 const outputText = document.querySelector("#output-text");
 
 form.addEventListener("keyup", (e) => {
-  let targetId = e.target.id;
-  let inputValue = inputFields.find(
+  const targetId = e.target.id;
+  const inputValue = inputFields.find(
     (inputItem) => inputItem.id === targetId
   ).value;
+
   storeUser(targetId, inputValue);
-  console.log(targetId);
 
   fieldMapping[targetId].innerText = transformInputValues(inputValue, targetId);
+
+  const value = e.target.value;
+  const target = e.target;
+  if (value === "") {
+    target.classList.add("missing-field");
+  }
+  if (value !== "") {
+    target.classList.remove("missing-field");
+  }
+});
+
+form.addEventListener("keydown", (e) => {
+  const value = e.target.value;
+  const target = e.target;
+  if (value === "") {
+    target.classList.add("missing-field");
+  }
+  if (value !== "") {
+    target.classList.remove("missing-field");
+  }
 });
 
 form.addEventListener("change", (e) => {
-  let targetId = e.target.id;
-  let inputValue = inputFields.find(
+  const targetId = e.target.id;
+  const inputValue = inputFields.find(
     (inputItem) => inputItem.id === targetId
   ).value;
   if (targetId === "dateInput") {
