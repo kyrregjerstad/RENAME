@@ -79,6 +79,7 @@ html {
   border: none;
   min-height: 1.5em;
   box-sizing: content-box;
+  font-size: 1rem;
 }
 #form-wrapper #input-form input:focus {
   outline: solid #4e4785 2px;
