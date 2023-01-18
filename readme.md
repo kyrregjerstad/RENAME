@@ -19,6 +19,7 @@ RENAME is a web application that allows you to quickly and easily rename your as
 #### Technical Stack
 
 - HTML5
+- scss
 - Vanilla JS
 
 #### Contributing
