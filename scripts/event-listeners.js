@@ -7,6 +7,7 @@ import {
 } from "./constants.js";
 import { storeUser } from "./store.js";
 import { transformInputValues } from "./transform-string.js";
+import JSConfetti from "js-confetti";
 
 const jsConfetti = new JSConfetti();
 
