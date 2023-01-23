@@ -6,6 +6,10 @@ import { copyBtn } from "./event-listeners.js";
 import { retrieveUser } from "./store.js";
 import { setFieldsOnLoad } from "./init-on-load.js";
 
-setDate();
-retrieveUser();
-setFieldsOnLoad();
+try {
+  setDate();
+  retrieveUser();
+  setFieldsOnLoad();
+} catch (error) {
+  console.warn("There was an error starting this application", error);
+}

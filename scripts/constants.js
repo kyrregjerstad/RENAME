@@ -8,6 +8,7 @@ export const assignmentShortcodeInput = document.querySelector(
 export const dateInput = document.querySelector("#dateInput");
 export const fileTypeInput = document.querySelector("#fileTypeInput");
 
+export const outputField = document.querySelector("#output-text");
 export const dateOutput = document.querySelector("#dateOutput");
 export const courseOutput = document.querySelector("#courseOutput");
 export const assignmentShortcodeOutput = document.querySelector(
