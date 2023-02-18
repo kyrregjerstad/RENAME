@@ -12,7 +12,7 @@ RENAME is a web application that allows you to quickly and easily rename your as
 ## Usage
 
 1. Go to https://rename.noroff.dev/
-2. Fill inn the required information
+2. Fill in the required information
 3. Click on the copy icon
 4. Paste the file name to your assignment file
 
