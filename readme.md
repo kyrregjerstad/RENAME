@@ -16,12 +16,6 @@ RENAME is a web application that allows you to quickly and easily rename your as
 3. Click on the copy icon
 4. Paste the file name to your assignment file
 
-#### Technical Stack
-
-- HTML5
-- scss
-- Vanilla JS
-
 #### Contributing
 
 If you are interested in contributing to the project please contact the project maintainer.
