@@ -9,11 +9,11 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "sass": "^1.57.1",
-    "vite": "^4.0.0"
+    "sass": "^1.62.1",
+    "vite": "^4.3.9"
   },
   "dependencies": {
-    "@vercel/analytics": "^0.1.8",
+    "@vercel/analytics": "^0.1.11",
     "js-confetti": "^0.11.0"
   }
 }
