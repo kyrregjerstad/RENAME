@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/kyrregjerstad/Noroff-Submission-Namer">
+  <a href="https://github.com/kyrregjerstad/RENAME">
     <img src="dist/assets/favicon1x-c400fd02.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -71,7 +71,7 @@ Use the package manager you want, I prefer [pnpm](https://pnpm.io/).
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/kyrregjerstad/Noroff-Submission-Namer
+   git clone https://github.com/kyrregjerstad/RENAME.git
    ```
 
 2. Navigate to the root folder of the project
@@ -109,4 +109,4 @@ Use the package manager you want, I prefer [pnpm](https://pnpm.io/).
 [javascript-badge]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
 [product-screenshot]: /dist/assets/screenshot.webp
 [deployed-site]: https://rename.noroff.dev/
-[repo-link]: https://github.com/kyrregjerstad/Noroff-Submission-Namer
+[repo-link]: https://github.com/kyrregjerstad/RENAME
