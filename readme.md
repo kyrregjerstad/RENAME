@@ -76,7 +76,7 @@ Use the package manager you want, I prefer [pnpm](https://pnpm.io/).
 
 2. Navigate to the root folder of the project
    ```sh
-   cd Noroff Submission Namer
+   cd RENAME
    ```
 3. Install NPM packages
 
