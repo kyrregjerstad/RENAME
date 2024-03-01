@@ -6,13 +6,22 @@
 	import DatePicker from './DatePicker.svelte';
 	import OutputField from './OutputField.svelte';
 
-	let values = $state<AssignmentInfo>({
-		firstName: '',
-		lastName: 'Doe',
-		course: 'Design1',
-		assignmentShortcode: 'CA',
+	const { firstName, lastName } = $props<{ firstName: string | null; lastName: string | null }>();
+
+	let data = $state<AssignmentInfo>({
+		firstName: firstName ?? 'John',
+		lastName: lastName ?? 'Doe',
+		course: '',
+		assignmentShortcode: '',
 		date: today(getLocalTimeZone()),
-		fileType: 'Report',
+		fileType: '',
+	});
+
+	// Save the first and last name to a cookie instead of using local storage
+	// so that it's server-side rendered with the initial page load
+	$effect(() => {
+		document.cookie = `firstName=${data.firstName}; path=/; max-age=31536000`;
+		document.cookie = `lastName=${data.lastName}; path=/; max-age=31536000`;
 	});
 </script>
 
@@ -21,42 +30,42 @@
 >
 	<Card.Header />
 	<Card.Content>
-		<form class="flex flex-col gap-2 sm:gap-4">
+		<div class="flex flex-col gap-2 sm:gap-4">
 			<div class="flex flex-col gap-4 sm:flex-row">
 				<InputField
 					label="First Name"
 					name="firstName"
 					placeholder="John"
-					bind:value={values.firstName}
+					bind:value={data.firstName}
 				/>
 				<InputField
 					label="Last Name"
 					name="lastName"
 					placeholder="Doe"
-					bind:value={values.lastName}
+					bind:value={data.lastName}
 				/>
 			</div>
 			<div class="flex flex-col gap-4 sm:flex-row">
-				<InputField label="Course" name="course" placeholder="Design1" bind:value={values.course} />
+				<InputField label="Course" name="course" placeholder="Design1" bind:value={data.course} />
 				<InputField
 					label="Assignment Shortcode"
 					name="assignmentShortcode"
 					placeholder="CA"
-					bind:value={values.assignmentShortcode}
+					bind:value={data.assignmentShortcode}
 				/>
 			</div>
 			<div class="flex flex-col gap-4 sm:flex-row">
-				<DatePicker bind:date={values.date} />
+				<DatePicker bind:date={data.date} />
 				<InputField
 					label="File Type"
 					name="fileType"
 					placeholder="Report"
-					bind:value={values.fileType}
+					bind:value={data.fileType}
 				/>
 			</div>
-		</form>
+		</div>
 	</Card.Content>
 	<Card.Footer>
-		<OutputField {values} />
+		<OutputField values={data} />
 	</Card.Footer>
 </Card.Root>

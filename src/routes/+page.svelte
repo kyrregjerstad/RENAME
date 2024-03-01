@@ -1,6 +1,10 @@
 <script>
 	import AssignmentInputCard from '../components/AssignmentInputCard.svelte';
 	import Logo from '../components/Logo.svelte';
+
+	export let data;
+
+	$: ({ firstName, lastName } = data);
 </script>
 
 <div
@@ -12,7 +16,7 @@
 			Rapidly Enhance and Name Assignments for Maximum Efficiency
 		</h2>
 	</div>
-	<AssignmentInputCard />
+	<AssignmentInputCard {firstName} {lastName} />
 </div>
 
 <style lang="postcss">
