@@ -30,7 +30,7 @@
 >
 	<Card.Header />
 	<Card.Content>
-		<div class="flex flex-col gap-2 sm:gap-4">
+		<div class="flex flex-col gap-2 sm:gap-6">
 			<div class="flex flex-col gap-4 sm:flex-row">
 				<InputField
 					label="First Name"
