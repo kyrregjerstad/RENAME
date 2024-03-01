@@ -1,11 +1,10 @@
-// formatAssignmentFilename.test.ts
 import { describe, it, expect, vi } from 'vitest';
 import { formatAssignmentFilename } from './formatAssignmentFilename';
 import type { DateValue } from '@internationalized/date';
 
 function createMockDate(date: string) {
 	return {
-		toString: vi.fn(() => date)
+		toString: vi.fn(() => date),
 	} as unknown as DateValue;
 }
 
@@ -19,7 +18,7 @@ describe('formatAssignmentFilename', () => {
 			course: 'Web Development',
 			assignmentShortcode: 'WD101',
 			date: mockDate,
-			fileType: 'pdf'
+			fileType: 'pdf',
 		};
 
 		const expectedOutput = '2023-01-01_web-development_wd101_john-doe_pdf';
@@ -36,7 +35,7 @@ describe('formatAssignmentFilename', () => {
 			course: 'Advanced Math',
 			assignmentShortcode: 'AM 202',
 			date: mockDate,
-			fileType: 'DocX'
+			fileType: 'DocX',
 		};
 
 		const expectedOutput = '2023-01-01_advanced-math_am-202_jane-van-doe_docx';
@@ -52,7 +51,7 @@ describe('formatAssignmentFilename', () => {
 			course: 'Physics & Astronomy',
 			assignmentShortcode: 'P&A 303',
 			date: mockDate,
-			fileType: 'pdf'
+			fileType: 'pdf',
 		};
 
 		const expectedOutput = '2023-02-02_physics-&-astronomy_p&a-303_o’neil-smith-jones_pdf';
@@ -68,7 +67,7 @@ describe('formatAssignmentFilename', () => {
 			course: ' ',
 			assignmentShortcode: '',
 			date: mockDate,
-			fileType: ' '
+			fileType: ' ',
 		};
 
 		const expectedOutput = '2023-03-03___';

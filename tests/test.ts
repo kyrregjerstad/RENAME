@@ -4,7 +4,7 @@ test('index page has expected h2', async ({ page }) => {
 	await page.goto('/');
 	await expect(
 		page.getByRole('heading', {
-			name: 'Rapidly Enhance and Name Assignments for Maximum Efficiency'
-		})
+			name: 'Rapidly Enhance and Name Assignments for Maximum Efficiency',
+		}),
 	).toBeVisible();
 });

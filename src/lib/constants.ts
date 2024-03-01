@@ -21,5 +21,5 @@ export const affirmations = [
 	"You're unstoppable! 🌪️",
 	'Keep conquering! 🏰',
 	'Keep on shining! ✨',
-	'Go for gold! 🥇'
+	'Go for gold! 🥇',
 ];

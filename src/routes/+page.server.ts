@@ -6,8 +6,8 @@ export const actions: Actions = {
 		if (theme) {
 			cookies.set('colortheme', theme, {
 				path: '/',
-				maxAge: 60 * 60 * 24 * 365 // 1 year
+				maxAge: 60 * 60 * 24 * 365, // 1 year
 			});
 		}
-	}
+	},
 };

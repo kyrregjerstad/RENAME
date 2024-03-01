@@ -2,7 +2,7 @@
 	import * as Card from '$lib/components/ui/card';
 	import type { AssignmentInfo } from '$lib/types';
 	import { getLocalTimeZone, today } from '@internationalized/date';
-	import CardInput from './InputFIeld.svelte';
+	import InputField from './InputField.svelte';
 	import DatePicker from './DatePicker.svelte';
 	import OutputField from './OutputField.svelte';
 
@@ -12,7 +12,7 @@
 		course: 'Design1',
 		assignmentShortcode: 'CA',
 		date: today(getLocalTimeZone()),
-		fileType: 'Report'
+		fileType: 'Report',
 	});
 </script>
 
@@ -23,13 +23,13 @@
 	<Card.Content>
 		<form class="flex flex-col gap-2 sm:gap-4">
 			<div class="flex flex-col gap-4 sm:flex-row">
-				<CardInput
+				<InputField
 					label="First Name"
 					name="firstName"
 					placeholder="John"
 					bind:value={values.firstName}
 				/>
-				<CardInput
+				<InputField
 					label="Last Name"
 					name="lastName"
 					placeholder="Doe"
@@ -37,8 +37,8 @@
 				/>
 			</div>
 			<div class="flex flex-col gap-4 sm:flex-row">
-				<CardInput label="Course" name="course" placeholder="Design1" bind:value={values.course} />
-				<CardInput
+				<InputField label="Course" name="course" placeholder="Design1" bind:value={values.course} />
+				<InputField
 					label="Assignment Shortcode"
 					name="assignmentShortcode"
 					placeholder="CA"
@@ -47,7 +47,7 @@
 			</div>
 			<div class="flex flex-col gap-4 sm:flex-row">
 				<DatePicker bind:date={values.date} />
-				<CardInput
+				<InputField
 					label="File Type"
 					name="fileType"
 					placeholder="Report"

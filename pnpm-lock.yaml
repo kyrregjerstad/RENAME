@@ -17,6 +17,9 @@ dependencies:
   lucide-svelte:
     specifier: ^0.314.0
     version: 0.314.0(svelte@5.0.0-next.69)
+  prettier:
+    specifier: ^3.2.5
+    version: 3.2.5
   svelte-french-toast:
     specifier: ^1.2.0
     version: 1.2.0(svelte@5.0.0-next.69)
@@ -70,9 +73,6 @@ devDependencies:
   postcss-load-config:
     specifier: ^5.0.3
     version: 5.0.3(postcss@8.4.35)
-  prettier:
-    specifier: ^3.2.5
-    version: 3.2.5
   prettier-plugin-svelte:
     specifier: ^3.2.2
     version: 3.2.2(prettier@3.2.5)(svelte@5.0.0-next.69)
@@ -2296,7 +2296,6 @@ packages:
     resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
     engines: {node: '>=14'}
     hasBin: true
-    dev: true
 
   /pretty-format@29.7.0:
     resolution: {integrity: sha512-Pdlw/oPxN+aXdmM9R00JVC9WVFoCLTKJvDVLgmJ+qAffBMxsV85l/Lu7sNx4zSzPyoL2euImuEwHhOXdEgNFZQ==}

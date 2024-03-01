@@ -8,7 +8,7 @@
 	import { Calendar as CalendarIcon } from 'lucide-svelte';
 
 	const df = new DateFormatter('en-US', {
-		dateStyle: 'long'
+		dateStyle: 'long',
 	});
 
 	type Props = {

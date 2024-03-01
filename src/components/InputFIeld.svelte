@@ -19,6 +19,8 @@
 
 		if (value === '') {
 			return false;
+		} else if (value.trim() === '') {
+			return false;
 		} else {
 			return true;
 		}
@@ -35,7 +37,7 @@
 		id={name}
 		{placeholder}
 		class={cn(
-			isValid === null ? 'bg-validateNeutral' : isValid ? 'bg-validateSuccess' : 'bg-validateError'
+			isValid === null ? 'bg-validateNeutral' : isValid ? 'bg-validateSuccess' : 'bg-validateError',
 		)}
 		required
 		on:input={() => (isTouched = true)}
