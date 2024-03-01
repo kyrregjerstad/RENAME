@@ -51,9 +51,12 @@
 <button
 	on:click={() => handleClick(formattedFileName)}
 	class="group relative flex w-full items-center justify-center gap-2 rounded-md border border-opacity-0 bg-inputBg p-2 px-8 text-inputBg-foreground shadow-inner hover:border-opacity-100 hover:brightness-110"
+	data-testid="output-field"
 >
 	<div class="relative">
-		{formattedFileName}
+		<span data-testid="output-text">
+			{formattedFileName}
+		</span>
 		<div class="absolute right-1/2">
 			{#if confettiEnabled}
 				<Confetti

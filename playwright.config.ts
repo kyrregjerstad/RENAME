@@ -7,6 +7,10 @@ const config: PlaywrightTestConfig = {
 	},
 	testDir: 'tests',
 	testMatch: /(.+\.)?(test|spec)\.[jt]s/,
+	use: {
+		browserName: 'chromium',
+		permissions: ['clipboard-read', 'clipboard-write'],
+	},
 };
 
 export default config;

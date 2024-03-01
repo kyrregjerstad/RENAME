@@ -10,5 +10,5 @@ export function formatAssignmentFilename(values: AssignmentInfo) {
 	const lastNameOutput = lastName.trim().toLowerCase().replace(/\s+/g, '-');
 	const fileTypeOutput = fileType.trim().toLowerCase().replace(/\s+/g, '-');
 	const output = `${dateOutput}_${courseOutput}_${assignmentShortcodeOutput}_${firstNameOutput}-${lastNameOutput}_${fileTypeOutput}`;
-	return output;
+	return output.trim();
 }
