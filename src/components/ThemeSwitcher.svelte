@@ -18,6 +18,19 @@
     themeStore.set(theme);
     document.documentElement.setAttribute('data-theme', theme);
   };
+
+  $effect(() => {
+    const dataTheme = document.documentElement.getAttribute('data-theme');
+
+    const result = themeSchema.safeParse(dataTheme);
+
+    if (!result.success) {
+      return;
+    }
+    const currentTheme = result.data;
+
+    themeStore.set(currentTheme);
+  });
 </script>
 
 <div class="absolute self-start p-2">
