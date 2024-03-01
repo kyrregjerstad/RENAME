@@ -33,12 +33,20 @@
 		});
 	}
 
+	async function handleKeydown(event: KeyboardEvent) {
+		if (event.key === 'Enter') {
+			handleClick(formattedFileName);
+		}
+	}
+
 	async function showConfetti() {
 		confettiEnabled = false;
 		await tick();
 		confettiEnabled = true;
 	}
 </script>
+
+<svelte:window on:keydown={handleKeydown} />
 
 <button
 	on:click={() => handleClick(formattedFileName)}
