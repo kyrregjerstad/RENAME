@@ -2,7 +2,7 @@
 	import * as Card from '$lib/components/ui/card';
 	import type { AssignmentInfo } from '$lib/types';
 	import { getLocalTimeZone, today } from '@internationalized/date';
-	import InputField from './InputField.svelte';
+	import InputField from './InputField2.svelte';
 	import DatePicker from './DatePicker.svelte';
 	import OutputField from './OutputField.svelte';
 
