@@ -48,6 +48,7 @@
 		"lucide-svelte": "^0.314.0",
 		"svelte-french-toast": "^1.2.0",
 		"tailwind-merge": "^2.2.1",
-		"tailwind-variants": "^0.1.20"
+		"tailwind-variants": "^0.1.20",
+		"zod": "^3.22.4"
 	}
 }
