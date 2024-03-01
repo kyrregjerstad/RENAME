@@ -70,7 +70,7 @@ describe('formatAssignmentFilename', () => {
 			fileType: ' ',
 		};
 
-		const expectedOutput = '2023-03-03___';
+		const expectedOutput = '2023-03-03___-_';
 		expect(formatAssignmentFilename(assignmentInfo)).toBe(expectedOutput);
 	});
 });
