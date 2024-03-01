@@ -24,7 +24,7 @@
 		<Popover.Trigger asChild let:builder>
 			<Button
 				variant="outline"
-				class={`${cn('justify-start text-left font-normal', !date && 'text-muted-foreground')} bg-validateSuccess`}
+				class={`${cn('justify-start text-left font-normal', !date && 'text-muted-foreground')} bg-validateSuccess text-black dark:text-white`}
 				builders={[builder]}
 			>
 				<CalendarIcon class="mr-2 h-4 w-4" />

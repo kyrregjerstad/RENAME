@@ -64,7 +64,7 @@
 	</div>
 
 	<div
-		class="absolute right-4 w-4 fill-foreground opacity-40 transition-opacity duration-300 group-hover:opacity-100"
+		class="absolute right-4 w-4 dark:fill-white fill-black opacity-40 transition-opacity duration-300 group-hover:opacity-100 text-black"
 	>
 		<CopyIcon style="w-4" />
 	</div>
