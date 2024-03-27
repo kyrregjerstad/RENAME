@@ -14,7 +14,7 @@
 		values: AssignmentInfo;
 	};
 
-	let { values } = $props<Props>();
+	let { values }: Props = $props();
 
 	let formattedFileName = $derived(formatAssignmentFilename(values));
 	let confettiEnabled = $state(false);

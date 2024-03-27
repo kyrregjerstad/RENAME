@@ -15,7 +15,7 @@
 		date: DateValue;
 	};
 
-	let { date } = $props<Props>();
+	let { date = $bindable() }: Props = $props();
 </script>
 
 <div class="grid w-full items-center gap-1.5">

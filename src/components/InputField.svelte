@@ -10,7 +10,7 @@
 		value: string;
 	};
 
-	let { label, name, placeholder, value } = $props<Props>();
+	let { label, name, placeholder, value = $bindable() }: Props = $props();
 
 	function checkIfValid(value: string, isTouched: boolean) {
 		if (isTouched === false && value === '') {

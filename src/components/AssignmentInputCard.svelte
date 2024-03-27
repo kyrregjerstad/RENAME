@@ -6,7 +6,7 @@
 	import DatePicker from './DatePicker.svelte';
 	import OutputField from './OutputField.svelte';
 
-	const { firstName, lastName } = $props<{ firstName: string | null; lastName: string | null }>();
+	let { firstName, lastName }: { firstName: string | null; lastName: string | null } = $props();
 
 	let data = $state<AssignmentInfo>({
 		firstName: firstName ?? 'John',
